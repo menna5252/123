@@ -2,7 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
-import { createHashRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { HomePage } from "./pages/Home";
 import { ProductsPage } from "./pages/Products";
 import { ProductPage } from "./pages/ProductPage"; // Updated import
@@ -16,7 +16,7 @@ import Orders from "./pages/Orders.jsx";
 import { useParams } from 'react-router-dom';
 
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
